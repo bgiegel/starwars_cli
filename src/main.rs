@@ -49,7 +49,7 @@ fn main() -> Result<(), Error> {
         }
         match read_choice() {
             Ok(index) => {
-                match people_response.results.get(usize::from(index)) {
+                match people_response.results.get(index) {
                     None => println!("Wrong index"),
                     Some(people) => println!("{}", people)
                 };
